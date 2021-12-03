@@ -9,20 +9,50 @@ Sliding window protocol implementation
 6. Stop the program
 
 ## To run the program
-### compile the program
-  >  javac slidereceiver.java
 
-  >  javac slidsender.java
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/bereketkibru/SLWP.git
+   ```
+2. Run
+### compile the program
+   ```sh
+    javac slidereceiver.java
+    javac slidsender.java
+   ```
 ### run the program 
 Then using different terminal run the compiled files using the command.
 
 on the first terminal run this command first
->java slidesender
-
+```sh
+    java slidesender
+   ```
 on the second terminal run this command
->java slidereceiver 
+```sh
+   java slidereceiver 
+   ```
 
 I implement this program using WSL(windows subsystem for Linux) and Vscode on a single machine. 
 
 ## Output
+### sender
+```sh
+Enter the no of frames : 3
+Enter 3 messages to be send
 
+first message
+second message
+third message
+
+Acknowledgment received for 3 frames
+```
+
+### Receiver
+```sh
+The received Frame 0 is : first message
+The received Frame 1 is : second message      The received Frame 2 is : third message 
+
+Acknowledgment sent
+```
