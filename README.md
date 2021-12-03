@@ -1,5 +1,9 @@
 # SLWP
-Sliding window protocol implementation
+Sliding window protocol implementation.
+
+The implementation that has been done so far is that it will accept a frame size from the user that is one less than the send window size.  and send thos mesages the acknoledgent will reach when all the messages are delivered to the reciever. Here there are two assumptions one is that the messages will reach the reciver without error and with order.
+
+However, this assumption is incorrect for real-time implementation, as some additional time delay and frame loss management will be introduced to the code to correctly support the Slide window protocol.
 ## Algorithm
 1. start the program
 2. Get the frame size from the user
